@@ -105,7 +105,7 @@ class ApiEndpoint(object):
                     "sub_fields": sub_fields,
                     "required": field.required,
                     "to_many_relation": to_many_relation,
-                    "help_text": field.help_text or '',
+                    "help_text": str(field.help_text or ''),
                 })
             # FIXME:
             # Show more attibutes of `field`?
